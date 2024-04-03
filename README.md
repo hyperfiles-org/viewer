@@ -1,6 +1,8 @@
-# Browser
+# Hyperfiles Viewer
 
-A framework for reusable components to render and modify SocialDB by Near Social.
+A gateway to publish and explore Hyperfiles.
+
+This is a Next.js app that renders React components from Near Protocol using the Near Social VM.
 
 ## Setup & Development
 

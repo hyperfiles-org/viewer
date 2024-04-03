@@ -207,12 +207,13 @@ export function Menu(props) {
               Profile
             </NavigationButton>
           </li>
-          <li>
+          {/*<li>
             <NavigationButton route="/edit">
               <Code />
               Editor
             </NavigationButton>
           </li>
+          */}
           <li>
             <NavigationButton href={props.documentationHref}>
               <Book />
@@ -221,7 +222,7 @@ export function Menu(props) {
           </li>
         </ul>
         <ul className="bottom-links">
-          {props.widgetSrc?.edit && (
+          {/*{props.widgetSrc?.edit && (
             <li>
               <Link to={`/edit/${props.widgetSrc?.edit}`}>
                 <Fork />
@@ -233,6 +234,7 @@ export function Menu(props) {
               </Link>
             </li>
           )}
+                */}
           {props.widgetSrc?.view && (
             <li>
               <Link

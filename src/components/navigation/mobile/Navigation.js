@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MobileMenuButton } from "./MobileMenuButton";
-import { NearSocialLogo } from "../../icons/NearSocialLogo";
+import { HyperfilesLogo } from "../../icons/HyperfilesLogo";
 import { NotificationWidget } from "../NotificationWidget";
 import { SignInButton } from "../SignInButton";
 import { StarButton } from "../StarButton";
@@ -56,7 +56,7 @@ export function Navigation(props) {
           window.scrollTo({ top: 0, behavior: "smooth" });
         }}
       >
-        <NearSocialLogo />
+        <HyperfilesLogo />
       </Link>
       {props.signedIn ? (
         <div className="d-flex">

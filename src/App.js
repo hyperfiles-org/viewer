@@ -34,7 +34,7 @@ import SignInPage from "./pages/SignInPage";
 import { isValidAttribute } from "dompurify";
 
 export const refreshAllowanceObj = {};
-const documentationHref = "https://social.near-docs.io/";
+const documentationHref = "http://docs.hyperfiles.org/";
 
 const getNetworkPreset = (networkId) => {
   switch (networkId) {
@@ -77,7 +77,7 @@ function App(props) {
 
   useEffect(() => {
     const walletSelectorNetwork = getNetworkPreset(NetworkId);
-    if (window.location.hostname === "near.social") {
+    if (window.location.hostname === "hyperfiles.org") {
       walletSelectorNetwork.nodeUrl = "https://rpc.fastnear.com";
     }
 
@@ -119,7 +119,7 @@ function App(props) {
       },
     };
 
-    if (window.location.hostname === "near.social") {
+    if (window.location.hostname === "hyperfiles.org") {
       config.config.nodeUrl = "https://rpc.fastnear.com";
     }
 

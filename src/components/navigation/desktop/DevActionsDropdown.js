@@ -105,7 +105,7 @@ export function DevActionsDropdown(props) {
           </div>
         </button>
         <ul className="dropdown-menu" aria-labelledby="dropdownMenu2222">
-          {props.widgetSrc?.edit && (
+          {/*{props.widgetSrc?.edit && (
             <li>
               <Link to={`/edit/${props.widgetSrc?.edit}`}>
                 <Fork />
@@ -115,6 +115,7 @@ export function DevActionsDropdown(props) {
               </Link>
             </li>
           )}
+          */}
           {props.widgetSrc?.view && (
             <li>
               <Link
