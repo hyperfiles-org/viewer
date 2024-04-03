@@ -6,7 +6,7 @@ import walletConnectModule from "@web3-onboard/walletconnect";
 import ledgerModule from "@web3-onboard/ledger";
 import { ethers } from "ethers";
 import ls from "local-storage";
-import icon from "../images/near_social_icon.svg";
+import icon from "../images/hyperfiles_icon.svg";
 
 const web3onboardKey = "web3-onboard:connectedWallets";
 
@@ -230,9 +230,9 @@ export const onboard = init({
     },
   ],
   appMetadata: {
-    name: "NEAR Social",
+    name: "Hyperfiles",
     icon,
-    description: "NEAR Social",
+    description: "Create and explore Hyperfiles: the on-chain knowledge graph.",
   },
   theme: "dark",
   containerElements: {
