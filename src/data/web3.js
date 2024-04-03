@@ -6,7 +6,7 @@ import walletConnectModule from "@web3-onboard/walletconnect";
 import ledgerModule from "@web3-onboard/ledger";
 import { ethers } from "ethers";
 import ls from "local-storage";
-import icon from "../images/hyperfiles_icon.svg";
+import icon from "../images/hyperfiles_icon.png";
 
 const web3onboardKey = "web3-onboard:connectedWallets";
 
