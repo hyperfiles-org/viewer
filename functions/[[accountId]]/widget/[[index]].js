@@ -76,7 +76,7 @@ class NoscriptDescriptionInjector {
 }
 
 function defaultData() {
-  const image = "https://near.social/assets/logo.png";
+  const image = "https://i.ibb.co/h7VbWxZ/logo.png";
   const title = "Hyperfiles";
   const description =
     "Organize everything. Easily compose between different apps and data types. 🔗🗂️🗃️";
