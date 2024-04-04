@@ -34,7 +34,7 @@ import SignInPage from "./pages/SignInPage";
 import { isValidAttribute } from "dompurify";
 
 export const refreshAllowanceObj = {};
-const documentationHref = "http://docs.hyperfiles.org/";
+const documentationHref = "docs.hyperfiles.org/";
 
 const getNetworkPreset = (networkId) => {
   switch (networkId) {
