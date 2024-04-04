@@ -2,7 +2,7 @@
 
 A gateway to publish and explore Hyperfiles.
 
-This is a Next.js app that renders React components from Near Protocol using the Near Social VM.
+This is a React app that renders components from Near Protocol using the Near Social VM.
 
 Explore the Hyperfiles docs at [http://docs.hyperfiles.org](http://docs.hyperfiles.org).
 
