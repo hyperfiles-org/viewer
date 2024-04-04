@@ -77,9 +77,9 @@ class NoscriptDescriptionInjector {
 
 function defaultData() {
   const image = "https://near.social/assets/logo.png";
-  const title = "Near Social";
+  const title = "Hyperfiles";
   const description =
-    "Decentralized Customizable Social Network on NEAR Protocol";
+    "Organize everything. Easily compose between different apps and data types. 🔗🗂️🗃️";
   return {
     image,
     title,
@@ -107,8 +107,8 @@ async function postData(env, url, data, isPost) {
     data.authorImage = await imageToUrl(env, authorImage);
   }
   data.title = isPost
-    ? `Post by ${name ?? accountId} | Near Social`
-    : `Comment by ${name ?? accountId} | Near Social`;
+    ? `Post by ${name ?? accountId} | Hyperfiles`
+    : `Comment by ${name ?? accountId} | Hyperfiles`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -120,12 +120,12 @@ async function profileData(env, url, data) {
   const name = profile?.name;
   data.raw = profile;
   data.description =
-    profile?.description || `Profile of ${accountId} on Near Social`;
+    profile?.description || `Profile of ${accountId} on Hyperfiles`;
   data.image = await imageToUrl(env, profile?.image);
   data.authorImage = data.image || wrapImage(DefaultProfileImage);
   data.title = name
-    ? `${name} (${accountId}) | Near Social`
-    : `${accountId} | Near Social`;
+    ? `${name} (${accountId}) | Hyperfiles`
+    : `${accountId} | Hyperfiles`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -143,7 +143,7 @@ async function widgetData(env, url, data) {
   data.description =
     metadata?.description || `Component ${name} created by ${accountId}`;
   data.image = await imageToUrl(env, metadata?.image);
-  data.title = `${name} by ${accountId} | Near Social`;
+  data.title = `${name} by ${accountId} | Hyperfiles`;
   data.accountName = name;
   data.accountId = accountId;
 }
@@ -162,7 +162,7 @@ async function sourceData(env, url, data) {
   data.description = source || "The source code is not available.";
   data.image = null;
   data.authorImage = await imageToUrl(env, image);
-  data.title = `Source code of ${key} at block height ${blockHeight} | Near Social`;
+  data.title = `Source code of ${key} at block height ${blockHeight} | Hyperfiles`;
   data.accountId = accountId;
 }
 
