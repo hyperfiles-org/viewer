@@ -80,8 +80,12 @@ export function DesktopNavigation(props) {
           <NavigationButton route="/edit">Editor</NavigationButton>
         */}
           <NavigationButton href={props.documentationHref}>
-            Docs
-            <ArrowUpRight />
+              Docs
+              <ArrowUpRight />
+          </NavigationButton>
+          <NavigationButton href={props.quickstartHref}>
+              QuickStart
+              <ArrowUpRight />
           </NavigationButton>
         </div>
         <div className="user-section">

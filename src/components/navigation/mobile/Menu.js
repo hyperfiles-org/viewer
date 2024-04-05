@@ -220,6 +220,12 @@ export function Menu(props) {
               Documentation
             </NavigationButton>
           </li>
+          <li>
+            <NavigationButton href={props.quickstartHref}>
+              <Book />
+              Quickstart
+            </NavigationButton>
+          </li>
         </ul>
         <ul className="bottom-links">
           {/*{props.widgetSrc?.edit && (

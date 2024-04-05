@@ -9,6 +9,7 @@ import "App.scss";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import EditorPage from "./pages/EditorPage";
 import ViewPage from "./pages/ViewPage";
+import DocsPage from "./pages/DocsPage";
 import { setupWalletSelector } from "@near-wallet-selector/core";
 import { setupMyNearWallet } from "@near-wallet-selector/my-near-wallet";
 import { setupSender } from "@near-wallet-selector/sender";
@@ -34,7 +35,8 @@ import SignInPage from "./pages/SignInPage";
 import { isValidAttribute } from "dompurify";
 
 export const refreshAllowanceObj = {};
-const documentationHref = "http://docs.hyperfiles.org/";
+const documentationHref = "https://opencann.notion.site/Hyperfiles-52cdfb892aff4d0ebe2178436c5edf6d?pvs=4";
+const quickstartHref = "https://opencann.notion.site/Hyperfiles-Quickstart-Guide-d9aed78245664b63b016433f2c26ff42?pvs=4";
 
 const getNetworkPreset = (networkId) => {
   switch (networkId) {
@@ -195,6 +197,7 @@ function App(props) {
     requestSignIn,
     widgets: Widgets,
     documentationHref,
+    quickstartHref,
   };
 
   return (
@@ -216,6 +219,10 @@ function App(props) {
             <Route path={"/:widgetSrc*"}>
               <NavigationWrapper {...passProps} />
               <ViewPage {...passProps} />
+            </Route>
+            <Route path={"/docs"}>
+              <NavigationWrapper {...passProps} />
+              <DocsPage {...passProps} />
             </Route>
           </Switch>
         </Router>

@@ -10,7 +10,7 @@ export default function EmbedPage(props) {
   const { widgetSrc } = useParams();
   const query = useQuery();
   const [widgetProps, setWidgetProps] = useState({});
-  const src = widgetSrc || props.widgets.default;
+  const src = props.src || widgetSrc || props.widgets.default;
 
   useEffect(() => {
     setWidgetProps(
