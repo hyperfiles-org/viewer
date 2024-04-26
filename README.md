@@ -2,7 +2,7 @@
 
 A gateway to publish and explore Hyperfiles.
 
-This is a React app that renders components from Near Protocol using the Near Social VM.
+This React app renders components from Near socialDB using the Near Social VM. All components are stored on-chain.
 
 Explore the Hyperfiles docs at [http://docs.hyperfiles.org](http://docs.hyperfiles.org).
 
